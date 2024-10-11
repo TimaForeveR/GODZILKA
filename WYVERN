@@ -62,7 +62,7 @@ local UserGameSettings = UserSettings():GetService("UserGameSettings")
 getrenv().getgenv = clonefunction(getgenv)
 
 local message = Instance.new("Message")
-message.Text = "loading wyvern"
+message.Text = "Загрузка виверна..."
 message.Name =
     "ðŸ’‹â€  ð“ð“˜ð“–ð“–ð“â€€! ð“—ð“ð“’ð“š  â€ðŸ’‹"
 message.Parent = CoreGui
