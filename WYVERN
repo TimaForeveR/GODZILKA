@@ -135,7 +135,7 @@ task.spawn(
         changelog:Label("Added more versatility on fire all remotes (string or number for ugc limited ID)")
         changelog:Label("Supported PromptBulkPurchase for fire all remotes")
 
-        local main = serv:Channel("Home")
+        local main = serv:Channel("")
         main:Label("\nThank you for using Wyvern!\nThe #2 UGC Games Penetration Testing Tool! (mine is still better)")
         main:Label("Check out the other Discord channels to see our available tools!")
         main:Label("The most up-to-date Wyvern")
@@ -179,7 +179,7 @@ task.spawn(
                 discord:Notification("Credits", "created by chel, maintained by redblue", "Okay!")
             end
         )
-        local ugc = serv:Channel("UGC Limiteds")
+        local ugc = serv:Channel("УГС лимитки")
         ugc:Label("Looking for Remote Bruteforcing? Check out #Remotes!")
         ugc:Seperator()
         local li12 = "debme//:sptth"
@@ -189,7 +189,7 @@ task.spawn(
         ugc:Label("With this, you can get #1 serials of web UGC item drops!")
         local li13 = "zo553xy4hv/war/p/liaf."
         ugc:Button(
-            "Трахнуть мишу",
+            "Teleport to Rolimons UGC Game",
             function()
                 TeleportService:Teleport(14056754882, Players.LocalPlayer)
             end
