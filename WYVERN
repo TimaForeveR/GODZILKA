@@ -60,7 +60,7 @@ local UserGameSettings = UserSettings():GetService("UserGameSettings")
 getrenv().getgenv = clonefunction(getgenv)
 
 local message = Instance.new("Message")
-message.Text = "loading wyvern (maintained by redblue)"
+message.Text = "Загрузка виверна..."
 message.Name = "ðŸ’‹â€  ð“ð“˜ð“–ð“–ð“â€€! ð“—ð“ð“’ð“š  â€ðŸ’‹"
 message.Parent = CoreGui
 
@@ -825,7 +825,7 @@ task.spawn(
             end
         )
 
-        local remotes = serv:Channel("Remotes")
+        local remotes = serv:Channel("Ремоуты")
         remotes:Label(
             "\nFires all remotes in the game as an attempt to prompt the item.\nWarning: This can be risky and can fire a decoy remote!\n"
         )
