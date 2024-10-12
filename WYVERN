@@ -112,9 +112,9 @@ end
 
 task.spawn(function()
     local discord = loadstring(game:HttpGet("https://raw.githubusercontent.com/wyvernleaker/WyvernUI/main/UI.lua"))()
-    local win = discord:Window("Wyvern 1.269.4 - redblues edition [GokuSSJ5FreakyButtSex]")
+    local win = discord:Window("ВИВЕРН ГОДЗИЛОК")
     local serv = win:Server("Wyvern", "http://www.roblox.com/asset/?id=6031075938")
-    local main = serv:Channel("Home")
+    local main = serv:Channel("Главная")
     main:Label("\nThank you for using Wyvern!\nThe #2 UGC Games Penetration Testing Tool! (mine is still better)")
     main:Label("Check out the other Discord channels to see our available tools!")
     main:Seperator()
@@ -844,7 +844,7 @@ task.spawn(function()
             network:Label("Your Account Country Code (Settings): " .. AccountCode)
         end
     end)
-    local input = serv:Channel("Input Automations")
+    local input = serv:Channel("Автоввод")
     input:Toggle("Auto Use Tools in Inventory", false, function(bool)
         if bool then
             local Player = Players.LocalPlayer
