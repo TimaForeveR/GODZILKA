@@ -399,7 +399,7 @@ task.spawn(function()
             task.wait(snpespeed)
         end
     end)
-    local remotes = serv:Channel("Remotes")
+    local remotes = serv:Channel("Ремоуты")
     remotes:Label(
         "\nFires all remotes in the game as an attempt to prompt the item.\nWarning: This can be risky and can fire a decoy remote!\n")
     remotes:Textbox("UGC Limited Item ID", "Enter Item ID that you wanna be included in the arguments...", false,
@@ -525,7 +525,7 @@ task.spawn(function()
         local input = loadstring(game:HttpGet('https://pastebin.com/raw/dYzQv3d8'))()
         input.press(Enum.KeyCode.F9)
     end)
-    local games = serv:Channel("Games")
+    local games = serv:Channel("Плейсы")
     local antikickonteleport = false
     games:Toggle("Inject Anti Kick on Teleport", false, function(bool)
         if bool then
@@ -630,7 +630,7 @@ task.spawn(function()
     games:Label("Current Game's Place ID:\n" .. game.PlaceId)
     games:Label("Current Game's Universe ID:\n" .. game.GameId)
     games:Label("Current Game's Job ID: \n" .. game.JobId)
-    local players = serv:Channel("Players")
+    local players = serv:Channel("Игроки")
     players:Label("\nUses SetLocalPlayerInfo() to change your info!")
     players:Textbox("Spoof as player with User ID (Client)", "Enter your new User ID...", false, function(t)
         local tt = tonumber(t)
