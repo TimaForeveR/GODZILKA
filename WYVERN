@@ -115,8 +115,8 @@ task.spawn(function()
     local win = discord:Window("ВИВЕРН ГОДЗИЛОК")
     local serv = win:Server("Wyvern", "http://www.roblox.com/asset/?id=6031075938")
     local main = serv:Channel("Главная")
-    main:Label("\nThank you for using Wyvern!\nThe #2 UGC Games Penetration Testing Tool! (mine is still better)")
-    main:Label("Check out the other Discord channels to see our available tools!")
+    main:Label("\nПривет")
+    main:Label("Привет")
     main:Seperator()
     -- main:Label("\n\nPlanned:\n- The Explorer you see at the left side of your screen\n- Move some stuff that doesn't belong in their category\n- More features\n- New techniques to get free UGC items from games")
     main:Button("something was here but was removed", function()
@@ -144,9 +144,6 @@ task.spawn(function()
     main:Button("Выебать Мишу", function()
         discord:Notification("Ало...", "я тебя ненавижу", "Прости...")
     end)
-    main:Button("Credits", function()
-        discord:Notification("Credits", "i forgot, will be putting soon", "Okay!")
-    end)
     main:Button("Призыв Миши", function()
          game:GetService("StarterGui"):SetCore("SendNotification", { 
  Title = "Миша";
@@ -160,7 +157,7 @@ Duration = 10;
     ugc:Label(
         "\nThis will auto purchase any limited that gets prompted!\nThis is recommended to use in the rolimons game or wagoogus.\n")
     ugc:Label("With this, you can get #1 serials of web UGC item drops!")
-    ugc:Toggle("Auto Purchaser", false, function(bool)
+    ugc:Toggle("Авто Снайпер В1", false, function(bool)
         if bool then
             discord:Notification("Waiting", "Waiting for any free UGC item to be prompted...", "Okay!")
             getrenv()._set = clonefunction(setthreadidentity)
@@ -214,7 +211,7 @@ Duration = 10;
         end
     end)
 
-    ugc:Toggle("Auto Purchaser V2 (BETA)", false, function(bool)
+    ugc:Toggle("Авто Снайпер В2", false, function(bool)
         if bool then
             discord:Notification("Waiting", "Waiting for any free UGC item to be prompted...", "Okay!")
             getrenv()._set = clonefunction(setthreadidentity)
@@ -415,14 +412,14 @@ Duration = 10;
             if type(tt) == "number" then
                 getgenv().limitedidforfiringremotewithwyvern = tt
                 discord:Notification("Success",
-                    "The script now remembers that the Item ID you want is " .. tostring(tt) .. "!", "Okay!")
+                    "Айди сохранен!" .. tostring(tt) .. "!", "Хорошо!")
             else
                 discord:Notification("Error", "That's... not an Item ID.", "Okay!")
             end
         end)
     remotes:Dropdown("Remote Arguments...",
-        {"No Arguments/Blank", "LocalPlayer", "Your Username", "UGC Item ID", "UGC Item ID, LocalPlayer",
-         "LocalPlayer, UGC Item ID", "'UGC' as a string", "UGC Item ID, 'true' boolean", "'true' boolean",
+        {"Нет условий/Пусто", "ЛокалПлеер", "Твой ник", "УГС айди", "УГС айди, ЛокалПлеер",
+         "ЛокалПлеер, УГС айди", "'УГС' as a string", "UGC Item ID, 'true' boolean", "'true' boolean",
          "literal lua code to prompt item", "loadstring prompt item"}, function(x)
             if not getgenv().limitedidforfiringremotewithwyvern then
                 discord:Notification("Error",
