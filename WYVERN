@@ -597,7 +597,7 @@ task.spawn(function()
         Lighting.ClockTime = 14
         Lighting.FogEnd = 100000
         Lighting.GlobalShadows = false
-        Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+        Lighting.OutdoorAmbient = Color3.fromRGB(255, 153, 102)
     end)
     games:Button("Teleport to Smallest Server", function()
         local gameapi = "https://games.roblox.com/v1/games/"
