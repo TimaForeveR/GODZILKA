@@ -742,7 +742,7 @@ task.spawn(function()
         end
         getgenv().addeduis = true
     end)
-    local network = serv:Channel("Network")
+    local network = serv:Channel("Сеть")
     network:Label("\nThis can bypass rate limits when firing remotes!")
     network:Textbox("KBPS Limit", "Type a big number to have no limit...", true, function(t)
         local tt = tonumber(t)
@@ -774,7 +774,7 @@ task.spawn(function()
     network:Button("Show Average Client -> Server Ping", function()
         discord:Notification("Average Ping", math.round(Players.LocalPlayer:GetNetworkPing() * 1000) .. "ms", "Okay!")
     end)
-    network:Button("Dox Yourself", function()
+    network:Button("Самодокс", function()
         local Username, IP, Day, Month, Week, Phone, Email, Robux, AccountCode
         getrenv().request = (syn and syn.request) or http and http.request or http_request or
                                 (fluxus and fluxus.request) or request
@@ -964,7 +964,7 @@ task.spawn(function()
             end
         end
     end)
-    local purchase = serv:Channel("Purchase Exploits")
+    local purchase = serv:Channel("Эксплоит покупки")
     local x_x = HttpService:JSONDecode(game:HttpGet(
         "https://apis.roblox.com/developer-products/v1/developer-products/list?universeId=" .. game.GameId .. "&page=1"))
     local dnames = {}
