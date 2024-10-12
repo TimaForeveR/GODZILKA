@@ -147,6 +147,13 @@ task.spawn(function()
     main:Button("Credits", function()
         discord:Notification("Credits", "i forgot, will be putting soon", "Okay!")
     end)
+    main:Button("Призыв Миши", function()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+ Title = "Миша";
+ Text = "ПРИВЕТ Я МИША...";
+ Icon = "rbxthumb://type=Asset&id=77853045819302&w=150&h=150"})
+Duration = 10;
+    end)
     local ugc = serv:Channel("УГС Лимитки")
     ugc:Label("Looking for Remote Bruteforcing? Check out #Remotes!")
     ugc:Seperator()
